@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "js",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+  },
+}
