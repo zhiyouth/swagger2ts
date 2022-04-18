@@ -1,6 +1,9 @@
 export type SwaggerSchema = {
-  originalRef: string;
-    $ref: string;
+  type?: string;
+  originalRef?: string;
+  $ref?: string;
+} | {
+  [key in string]: SwaggerSchema
 }
 
 export type SwaggerTag = {

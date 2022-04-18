@@ -55,14 +55,14 @@ type SwaggerDefinitionItem = {
 type SwaggerPaths = {
   [key in string]: SwaggerPath;
 }
-type SwaggerPath = {
+export type SwaggerPath = {
   [key in RequestMethod]: {
     tags: Array<string>;
     summary: string;
     operationId: string;
     consumes: Array<string>;
     produces: Array<string>;
-    parameters: Array<SwaggerPathParameter>;
+    parameters: SwaggerPathParameter[];
     responses: {
       [key in ResponseHttpCode]: {
         description: string;
@@ -79,10 +79,11 @@ type SwaggerPath = {
     "x-order": string;
   }
 }
-type SwaggerPathParameter = {
+export type SwaggerPathParameter = {
+  type: string;
   in: string;
   name: string;
   description: string;
-  required: true;
+  required: boolean;
   schema: SwaggerSchema;
 }
