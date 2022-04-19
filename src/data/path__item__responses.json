@@ -1,0 +1,22 @@
+{
+  "200": {
+      "description": "OK",
+      "responseSchema": {
+          "originalRef": "CommonResult«List«CompanyQueryOutputVO»»",
+          "$ref": "#/definitions/CommonResult«List«CompanyQueryOutputVO»»"
+      },
+      "schema": {
+          "originalRef": "CommonResult«List«CompanyQueryOutputVO»»",
+          "$ref": "#/definitions/CommonResult«List«CompanyQueryOutputVO»»"
+      }
+  },
+  "401": {
+      "description": "Unauthorized"
+  },
+  "403": {
+      "description": "Forbidden"
+  },
+  "404": {
+      "description": "Not Found"
+  }
+}

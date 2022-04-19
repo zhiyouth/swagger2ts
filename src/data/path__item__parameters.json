@@ -1,0 +1,9 @@
+[
+  {
+      "name": "companyCodeOrName",
+      "in": "query",
+      "description": "公司编码/名称",
+      "required": false,
+      "type": "string"
+  }
+]

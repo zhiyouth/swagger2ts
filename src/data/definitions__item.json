@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+      "key": {
+          "type": "string",
+          "description": "字段"
+      },
+      "option": {
+          "type": "string",
+          "description": "条件"
+      },
+      "value": {
+          "type": "string",
+          "description": "字段值"
+      }
+  }
+}

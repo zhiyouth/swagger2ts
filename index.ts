@@ -1,12 +1,9 @@
 import chalk from 'chalk';
 import * as http from 'http'
-import data from './data.json'
-import { SwaggerPath } from './src/types/swagger';
+import run from './src';
 
 const PORT = 6666;
-const pathItem = data.paths
-const a = pathItem as SwaggerPath
-
+run();
 http.createServer()
 .listen(PORT, () => {
   console.log(chalk.green(`serve start at http://localhost:${PORT}`))
