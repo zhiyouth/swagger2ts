@@ -7,7 +7,7 @@ export type SwaggerPaths = {
   [key in string]: SwaggerPath;
 }
 type SwaggerPath = {
-  [key in RequestMethod]: {
+  [key in RequestMethod]?: {
     tags: string[];
     description?: string;
     summary: string;
@@ -32,7 +32,7 @@ type PathItemParameters = {
 }[]
 
 type PathItemResponses = {
-  [key in ResponseHttpCode]: {
+  [key in ResponseHttpCode]?: {
     description: string;
     responseSchema?: SwaggerRef;
     schema?: SwaggerRef;

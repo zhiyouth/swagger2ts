@@ -11,5 +11,8 @@ const run = () => {
     paths,
     definitions
   } = swaggerData;
+
+  const curRequest = paths['/base/queryFormHeader']
+  curRequest.post
 }
 export default run
